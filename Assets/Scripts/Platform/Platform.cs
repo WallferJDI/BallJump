@@ -12,6 +12,9 @@ public class Platform : MonoBehaviour
         PlatformSegment[] platformSegments = GetComponentsInChildren<PlatformSegment>();
 
         foreach (var segment in platformSegments)
+        {
             segment.Bounce(_bounceForce, transform.position, _bounceRadius);
+            Destroy(gameObject,1f);
+        }
     }
 }

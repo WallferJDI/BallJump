@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3153452561005264209}
   - component: {fileID: 3153452561005264208}
   - component: {fileID: 3153452561005264221}
-  - component: {fileID: 3153452561005264220}
   - component: {fileID: 6773061377038204607}
+  - component: {fileID: -5439362376408532334}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 57b32a68ed9ad3642b2128565797b43c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -114,19 +114,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
---- !u!114 &3153452561005264220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3153452561005264215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b903ce333f5e164eac816a498796ec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _jumpForce: 3
 --- !u!114 &6773061377038204607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,3 +126,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 144b280c919f5e44783b9ace7acd2ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-5439362376408532334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3153452561005264215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b903ce333f5e164eac816a498796ec8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumpForce: {x: 0, y: 5, z: 0}
