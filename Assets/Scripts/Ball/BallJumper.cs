@@ -20,6 +20,7 @@ public class BallJumper : MonoBehaviour
         {
             _rb.velocity = Vector3.zero;
             _rb.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
+            
         }
     }
 }
